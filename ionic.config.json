@@ -1,0 +1,7 @@
+{
+  "name": "conwaygame",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
