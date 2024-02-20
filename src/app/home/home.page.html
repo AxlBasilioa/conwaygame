@@ -13,8 +13,9 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div id="tablero">
+    <div id="fila" *ngFor="let fila of arr;let i = index">
+      <div [id]="'celula' + celula" *ngFor="let celula of fila; let j = index" (click)="settearData(i,j)"></div>
+    </div>
   </div>
 </ion-content>
